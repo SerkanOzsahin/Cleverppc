@@ -10,7 +10,7 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.interactions.Action;
 import org.openqa.selenium.interactions.Actions;
 
-public class _04_AddingProductstoCart {
+public class _04_ProductsToCart {
 
     LeftNav ln = new LeftNav();
     DialogContent dc = new DialogContent();

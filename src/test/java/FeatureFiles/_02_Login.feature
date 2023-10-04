@@ -1,8 +1,8 @@
 Feature:Ability to Login User
 
   Background:
-    Given  Navigate to Site
-    When Click "SingButton"
+    Given Navigate to website
+    When User click on "SignButton"
 
   Scenario: Login Functionality
     Then Enter E-mail adress And Password

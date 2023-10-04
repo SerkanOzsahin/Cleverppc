@@ -1,8 +1,8 @@
 Feature: Adding Products to Cart
 
   Background:
-    Given  Navigate to Site
-    When Click "SingButton"
+    Given Navigate to website
+    When User click on "SignButton"
     Then Enter E-mail adress And Password
     And Click on Sing in
 

@@ -4,7 +4,7 @@ import Pages.DialogContent;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
 
-public class _02_AbilitytoLoginUser {
+public class _02_Login {
 
     DialogContent dc = new DialogContent();
 

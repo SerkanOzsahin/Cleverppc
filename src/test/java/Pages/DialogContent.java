@@ -110,7 +110,7 @@ public class DialogContent extends Parent {
     public WebElement backToMainPage;
 
     @FindBy(className = "login")
-    public WebElement SingButton;
+    public WebElement SignButton;
 
     @FindBy(id = "email_create")
     public WebElement Email;
@@ -270,7 +270,7 @@ public class DialogContent extends Parent {
             case "zipCode": return this.zipCode;
             case "phone": return this.phone;
             case "addressAlias": return this.addressAlias;
-            case "SingButton": return SingButton;
+            case "SingButton": return SignButton;
             case "Email": return Email;
             case "CreateAcc": return CreateAcc;
             case "Firstname": return Firstname;

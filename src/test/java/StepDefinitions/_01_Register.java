@@ -9,24 +9,24 @@ import io.cucumber.java.en.When;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 
-public class _01_UserRecording {
+public class _01_Register {
 
     DialogContent dc = new DialogContent();
 
-    @Given("Navigate to Site")
-    public void navigateToCampus() {
+    @Given("Navigate to website")
+    public void navigateToWebsite() {
 
         GWD.getDriver().get("https://cleverppc.com/prestashop4/");
     }
 
-    @When("Click {string}")
+    @When("User click on {string}")
     public void click(String Click) {
 
         WebElement BtnClick = dc.ElementGet(Click);
         dc.myClick(BtnClick);
     }
 
-    @And("Write {string} and Click {string}")
+    @And("Write {string} and click {string}")
     public void writeAndClick(String Email, String Click) {
 
         WebElement EmailS = dc.ElementGet(Email);

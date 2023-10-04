@@ -8,7 +8,7 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.testng.Assert;
 
-public class _06_CheckingProductsAddedCart {
+public class _06_ProductInCartCheck {
 
     DialogContent dc = new DialogContent();
     LeftNav ln = new LeftNav();
