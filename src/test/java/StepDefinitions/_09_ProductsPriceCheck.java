@@ -1,7 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -13,7 +13,7 @@ import java.util.Random;
 
 public class _09_ProductsPriceCheck {
 
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
     DialogContent dc = new DialogContent();
 
     @When("user selects three random products")

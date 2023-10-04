@@ -1,7 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
@@ -12,7 +12,7 @@ import org.testng.Assert;
 public class _07_OrderingAndPayment {
 
     DialogContent dc = new DialogContent();
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
 
     @When("User clicks on cart and Checkout button")
     public void userClicksOnCartAndCheckoutButton() {

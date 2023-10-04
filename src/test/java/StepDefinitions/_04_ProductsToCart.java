@@ -1,7 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import Utilities.GWD;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
@@ -12,7 +12,7 @@ import org.openqa.selenium.interactions.Actions;
 
 public class _04_ProductsToCart {
 
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
     DialogContent dc = new DialogContent();
 
     @Given("navigate to summer dresses")

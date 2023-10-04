@@ -1,14 +1,14 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.openqa.selenium.Keys;
 
 public class _10_SearchNull {
 
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
     DialogContent dc = new DialogContent();
 
     @When("user search with null")

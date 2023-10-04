@@ -1,7 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -10,7 +10,7 @@ import org.testng.Assert;
 
 public class _05_ListedProducts {
 
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
     DialogContent dc = new DialogContent();
 
     @Given("navigate to dresses")

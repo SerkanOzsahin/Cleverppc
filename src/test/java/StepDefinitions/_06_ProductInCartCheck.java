@@ -1,7 +1,7 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
+import Pages.NavTab;
 import Utilities.GWD;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
@@ -11,7 +11,7 @@ import org.testng.Assert;
 public class _06_ProductInCartCheck {
 
     DialogContent dc = new DialogContent();
-    LeftNav ln = new LeftNav();
+    NavTab ln = new NavTab();
 
     @Given("navigate to dresses page")
     public void navigateToDressesPage() {
