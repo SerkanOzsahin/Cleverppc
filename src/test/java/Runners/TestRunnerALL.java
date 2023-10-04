@@ -6,14 +6,18 @@ import io.cucumber.testng.CucumberOptions;
 import org.testng.annotations.AfterClass;
 
 @CucumberOptions(
+
         tags = "",
         features = {"src/test/java/FeatureFiles"},
         glue = {"StepDefinitions"},
         plugin = {"com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"}
 )
+
 public class TestRunnerALL extends AbstractTestNGCucumberTests {
+
     @AfterClass
     public static void writeExtentReport() {
+
         ExtentService.getInstance().setSystemInfo("Windows User Name", System.getProperty("user.name"));
         ExtentService.getInstance().setSystemInfo("Time Zone", System.getProperty("user.timezone"));
         ExtentService.getInstance().setSystemInfo("User Name", "Group 3 ");
@@ -25,6 +29,4 @@ public class TestRunnerALL extends AbstractTestNGCucumberTests {
         ExtentService.getInstance().setSystemInfo("Serkan Özşahin= ", "User Stories(3-4-5-9-10-11-12");
         ExtentService.getInstance().setSystemInfo("Serkan Şengül= ", "User Stories(1-2-8-13");
     }
-
-
 }

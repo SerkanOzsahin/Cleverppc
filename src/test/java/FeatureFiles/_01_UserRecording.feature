@@ -8,4 +8,3 @@ Feature: Login Functionality
     Then Select "MrSelect",Enter "Firstname","LastName","Password" and Date of Birth
     And Click Register Button
     Then User should login successfully
-

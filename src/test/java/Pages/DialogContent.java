@@ -1,10 +1,8 @@
 package Pages;
 
-
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
 import Utilities.GWD;
 
 import java.util.List;
@@ -14,6 +12,7 @@ public class DialogContent extends Parent {
     public DialogContent() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
+
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> allSummerDresses;
 
@@ -146,16 +145,18 @@ public class DialogContent extends Parent {
     @FindBy(css = "p[class='alert alert-success']")
     public WebElement Verify;
 
-
     @FindBy(id = "email")
     public WebElement EmailAdress;
+
     @FindBy(id = "SubmitLogin")
     public WebElement LoginButton;
 
     @FindBy(xpath = "(//*[@title='Contact us'])[1]")
     public WebElement ContactUS;
+
     @FindBy(id = "id_contact")
     public WebElement SubjectHeading;
+
     @FindBy(id = "message")
     public WebElement Message;
 
@@ -167,6 +168,7 @@ public class DialogContent extends Parent {
 
     @FindBy(id = "submitMessage")
     public WebElement Send;
+
     @FindBy(id = "87_order_products")
     public WebElement Product;
 
@@ -178,10 +180,13 @@ public class DialogContent extends Parent {
 
     @FindBy(xpath = "//span[text()='Add to cart']")
     public WebElement AddToCart;
+
     @FindBy(xpath = "(//*[@class='icon-chevron-right right'])[2]")
     public WebElement Proceed;
+
     @FindBy(css = "[title='Delete']")
     public WebElement DeleteBtn;
+
     @FindBy(css = "a[class='product-name']")
     public List<WebElement> summerDress;
 
@@ -197,13 +202,10 @@ public class DialogContent extends Parent {
     @FindBy(css = "span[id='summary_products_quantity']")
     public WebElement shoppingText;
 
-
     @FindBy(id = "passwd")
-    public  WebElement password;
+    public WebElement password;
 
-
-
-    @FindBy (xpath = "(//a[@class='product-name'])[1]")
+    @FindBy(xpath = "(//a[@class='product-name'])[1]")
     public WebElement addToBtn;
 
     @FindBy(css = "[class='exclusive']")
@@ -212,7 +214,7 @@ public class DialogContent extends Parent {
     @FindBy(css = "[title='Proceed to checkout']")
     public WebElement checkoutBtn;
 
-    @FindBy (xpath = "(//a[@title='Proceed to checkout'])[2]")
+    @FindBy(xpath = "(//a[@title='Proceed to checkout'])[2]")
     public WebElement checkoutBtn2;
 
     @FindBy(css = "[name='processAddress']")
@@ -253,13 +255,14 @@ public class DialogContent extends Parent {
 
     @FindBy(css = "[title='Go to your order history page']")
     public WebElement orderHistory;
+
     @FindBy(xpath = "(//a[@class='color-myaccount'])[1]")
     public WebElement orderMessage;
 
-
-
     public WebElement ElementGet(String element) {
+
         switch (element) {
+
             case "nameInput": return this.nameInput;
             case "lastnameInput": return this.lastnameInput;
             case "addressInput": return this.addressInput;
@@ -268,18 +271,13 @@ public class DialogContent extends Parent {
             case "phone": return this.phone;
             case "addressAlias": return this.addressAlias;
             case "SingButton": return SingButton;
-            case "Email":return Email;
-            case "CreateAcc":return CreateAcc;
-            case "Firstname":return Firstname;
-            case "LastName":return LastName;
-            case "Password":return Password;
-            case "MrSelect":return MrSelect;
+            case "Email": return Email;
+            case "CreateAcc": return CreateAcc;
+            case "Firstname": return Firstname;
+            case "LastName": return LastName;
+            case "Password": return Password;
+            case "MrSelect": return MrSelect;
         }
-
         return null;
     }
-
-
 }
-
-

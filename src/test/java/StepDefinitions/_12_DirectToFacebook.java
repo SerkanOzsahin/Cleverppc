@@ -1,7 +1,6 @@
 package StepDefinitions;
 
 import Pages.DialogContent;
-import Pages.LeftNav;
 import Utilities.GWD;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
@@ -11,14 +10,13 @@ import java.util.Set;
 
 public class _12_DirectToFacebook {
 
-
-    DialogContent dc=new DialogContent();
+    DialogContent dc = new DialogContent();
 
     @When("user clicks on the facebook link")
     public void userClicksOnTheFacebookLink() {
-        dc.Myclick(dc.backToMainPage);
+        dc.myClick(dc.backToMainPage);
         dc.scrollToElement(dc.facebookBlock);
-        dc.Myclick(dc.facebookLink);
+        dc.myClick(dc.facebookLink);
     }
 
     @Then("user should be directed to facebook website")

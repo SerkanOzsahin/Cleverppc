@@ -9,40 +9,35 @@ import java.time.Duration;
 import java.util.Locale;
 
 public class GWD {
+
     private static WebDriver driver;
 
     public static WebDriver getDriver() {
+
         Locale.setDefault(new Locale("EN"));
         System.setProperty("user.language", "EN");
+
         if (driver == null) {
             driver = new ChromeDriver();
             driver.manage().window().maximize();
-            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20)); // 20 sn mühlet: sayfayı yükleme mühlet
+            driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(20));
             ChromeOptions options = new ChromeOptions();
             options.addArguments("--disable-notifications");
             options.setPageLoadStrategy(PageLoadStrategy.NORMAL);
         }
         return driver;
-
-
     }
 
-
     public static void quitDriver() {
+
         try {
             Thread.sleep(5000);
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
         }
-
-
         if (driver != null) {
             driver.quit();
             driver = null;
         }
     }
-
-
 }
-
-

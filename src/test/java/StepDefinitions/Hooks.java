@@ -1,6 +1,5 @@
 package StepDefinitions;
 
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -12,32 +11,16 @@ import Utilities.GWD;
 public class Hooks {
 
     @Before
-    public void before()
-    {
-
-    }
+    public void before() {}
 
     @After
-    public void after(Scenario senaryo)
-    {
+    public void after(Scenario senaryo) {
 
-        if (senaryo.isFailed()){
-            TakesScreenshot ts=((TakesScreenshot) GWD.getDriver());
-            byte[] hafizadakiHali=ts.getScreenshotAs(OutputType.BYTES);
+        if (senaryo.isFailed()) {
+            TakesScreenshot ts = ((TakesScreenshot) GWD.getDriver());
+            byte[] hafizadakiHali = ts.getScreenshotAs(OutputType.BYTES);
             senaryo.attach(hafizadakiHali, "image/png", "screenshot name");
         }
-
-
-      GWD.quitDriver();
+        GWD.quitDriver();
     }
-
 }
-
-
-
-
-
-
-
-
-

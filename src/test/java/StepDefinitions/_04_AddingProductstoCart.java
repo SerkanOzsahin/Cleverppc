@@ -12,17 +12,16 @@ import org.openqa.selenium.interactions.Actions;
 
 public class _04_AddingProductstoCart {
 
-    LeftNav ln=new LeftNav();
-    DialogContent dc=new DialogContent();
+    LeftNav ln = new LeftNav();
+    DialogContent dc = new DialogContent();
 
     @Given("navigate to summer dresses")
     public void navigateToSummerDresses() {
 
-
         Actions actions = new Actions(GWD.getDriver());
         Action aksiyon = actions.moveToElement(ln.womenButton).build();
         aksiyon.perform();
-        ln.Myclick(ln.summerDressesButton);
+        ln.myClick(ln.summerDressesButton);
     }
 
     @When("user selects a random product")
@@ -35,12 +34,12 @@ public class _04_AddingProductstoCart {
     @Then("user clicks on the add to cart button")
     public void userClicksOnTheAddToCartButton() {
 
-        dc.Myclick(dc.addToCartButton);
+        dc.myClick(dc.addToCartButton);
     }
 
     @And("product should be successfully added to the cart")
     public void productShouldBeSuccessfullyAddedToTheCart() {
 
-        dc.VerifycontainsText(dc.confirmText, "successfully");
+        dc.verifyContainsText(dc.confirmText, "successfully");
     }
 }

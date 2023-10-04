@@ -13,8 +13,8 @@ import java.util.Random;
 
 public class _09_ProductsPriceCheck {
 
-    LeftNav ln=new LeftNav();
-    DialogContent dc=new DialogContent();
+    LeftNav ln = new LeftNav();
+    DialogContent dc = new DialogContent();
 
     @When("user selects three random products")
     public void userSelectsThreeRandomProducts() {
@@ -23,8 +23,8 @@ public class _09_ProductsPriceCheck {
         for (int i = 0; i < 3; i++) {
             int randomDress = rand.nextInt(dc.allSummerDresses.size());
             dc.allSummerDresses.get(randomDress).click();
-            dc.Myclick(dc.addToCartButton);
-            dc.Myclick(dc.continueShoppingButton);
+            dc.myClick(dc.addToCartButton);
+            dc.myClick(dc.continueShoppingButton);
             GWD.getDriver().navigate().back();
         }
     }
@@ -32,7 +32,7 @@ public class _09_ProductsPriceCheck {
     @And("user navigate to checkout from cart")
     public void userNavigateToCheckoutFromCart() {
 
-        dc.Myclick(ln.cartButton);
+        dc.myClick(ln.cartButton);
     }
 
     @Then("total price of the products should match with total products price")

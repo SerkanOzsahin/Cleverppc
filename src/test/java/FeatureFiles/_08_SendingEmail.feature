@@ -1,9 +1,11 @@
 Feature:Sending E-mail
+
   Background:
     Given  Navigate to Site
     When Click "SingButton"
     Then Enter E-mail adress And Password
     And Click on Sing in
+
   Scenario: Sending E-Mail
     And Click Contact Us button
     Then Select SubjectHeading,Order Reference

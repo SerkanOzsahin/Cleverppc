@@ -7,7 +7,7 @@ Feature: Adding new address user account
     And Click on Sing in
 
   Scenario: User adds a new address
-    
+
     When user clicks on the sitemap link and directed to the sitemap page
     Then user clicks on the address link and directed to the address page
     And user clicks on the add a new address button

@@ -10,6 +10,7 @@ public class LeftNav extends Parent {
     public LeftNav() {
         PageFactory.initElements(GWD.getDriver(), this);
     }
+
     @FindBy(css = "a[title='Women']")
     public WebElement womenButton;
 
@@ -30,9 +31,4 @@ public class LeftNav extends Parent {
 
     @FindBy(xpath = "(//*[@title='Dresses'])[2]")
     public WebElement dresBtn;
-    public WebElement GetWebelement(String element) {
-        switch (element) {
-        }
-        return null;
-    }
 }

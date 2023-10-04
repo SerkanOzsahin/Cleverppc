@@ -8,18 +8,18 @@ import org.openqa.selenium.Keys;
 
 public class _10_SearchNull {
 
-    LeftNav ln=new LeftNav();
-    DialogContent dc=new DialogContent();
+    LeftNav ln = new LeftNav();
+    DialogContent dc = new DialogContent();
 
     @When("user search with null")
     public void userSearchWithNull() {
 
-        ln.MysendKeys(ln.search, "" + Keys.ENTER);
+        ln.mySendKeys(ln.search, "" + Keys.ENTER);
     }
 
     @Then("warning message should be displayed")
     public void warningMessageShouldBeDisplayed() {
 
-        dc.VerifycontainsText(dc.alertText, "keyword");
+        dc.verifyContainsText(dc.alertText, "keyword");
     }
 }
